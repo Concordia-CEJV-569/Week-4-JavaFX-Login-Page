@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #37474f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.concordia.loginpage.controller.DetailsController">
    <children>
@@ -35,22 +35,26 @@
             <DropShadow />
          </effect>
          <children>
-            <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="29.0" prefWidth="346.0" text="How to find me" textFill="#656060">
+            <AnchorPane layoutY="-1.0" prefHeight="53.0" prefWidth="384.0" style="-fx-background-color: #101f27;" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="11.0" prefHeight="29.0" prefWidth="346.0" text="How to find me" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
+               <effect>
+                  <Blend />
+               </effect>
             </Label>
-            <Label layoutX="40.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
+            <Label fx:id="twitterLabel" layoutX="40.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="40.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
+            <Label fx:id="emailLabel" layoutX="40.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="40.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
+            <Label fx:id="websiteLabel" layoutX="40.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>

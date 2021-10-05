@@ -37,6 +37,5 @@ public class DetailsController {
 
     @FXML
     void initialize() {
-        ageLabel.setText("25");
     }
 }
