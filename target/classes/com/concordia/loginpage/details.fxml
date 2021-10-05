@@ -1,8 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #37474f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.concordia.loginpage.controller.DetailsController">
-
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #37474f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.concordia.loginpage.controller.DetailsController">
+   <children>
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="554.0" layoutY="14.0" prefHeight="21.0" prefWidth="132.0" text="Welcome..." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="13.0" layoutY="59.0" prefHeight="153.0" prefWidth="674.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="182.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/person.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="217.0" layoutY="16.0" prefHeight="29.0" prefWidth="160.0" text="Name" textFill="#656060" />
+            <Label fx:id="ageLabel" layoutX="217.0" layoutY="62.0" prefHeight="29.0" prefWidth="160.0" text="Age" textFill="#656060" />
+            <Label fx:id="professionLabel" layoutX="217.0" layoutY="108.0" prefHeight="29.0" prefWidth="160.0" text="Profession" textFill="#656060" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="303.0" layoutY="226.0" prefHeight="160.0" prefWidth="384.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="29.0" prefWidth="346.0" text="How to find me" textFill="#656060">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-website-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-twitter-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-email-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

@@ -40,32 +40,32 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="107.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
+            <Label layoutX="40.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="107.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
+            <Label layoutX="40.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="107.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
+            <Label layoutX="40.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="78.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/icons8-website-48.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="78.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/icons8-twitter-48.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="78.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/icons8-email-64.png" />
                </image>
