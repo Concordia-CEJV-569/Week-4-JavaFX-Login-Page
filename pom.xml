@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.concordia.loginpage/com.concordia.loginpage.HelloApplication</mainClass>
+                            <mainClass>com.concordia.loginpage/com.concordia.loginpage.Application</mainClass>
                         </configuration>
                     </execution>
                 </executions>
