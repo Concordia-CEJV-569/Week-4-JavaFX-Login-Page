@@ -1,4 +1,4 @@
-package com.concordia.loginpage;
+package com.concordia.loginpage.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
