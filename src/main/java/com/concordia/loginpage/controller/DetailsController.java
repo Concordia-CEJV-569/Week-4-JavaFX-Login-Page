@@ -39,8 +39,10 @@ public class DetailsController {
     void initialize() {
     }
 
-    public void setName(String name) {
+    public void setLabels(String name, String profession, int age) {
         this.welcomeLabel.setText("Welcome " + name);
         this.nameLabel.setText("Name: " + name);
+        this.professionLabel.setText("Profession: " + profession);
+        this.ageLabel.setText("Age: " + age);
     }
 }

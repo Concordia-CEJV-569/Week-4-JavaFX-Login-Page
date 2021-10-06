@@ -68,7 +68,7 @@ public class LoginController {
             detailsStage.setScene(scene);
 
             DetailsController detailsController = fxmlLoader.getController();
-            detailsController.setName(username);
+            detailsController.setLabels(username, "JavaFX Developer", 25);
 
             detailsStage.show();
             detailsStage.setResizable(false);

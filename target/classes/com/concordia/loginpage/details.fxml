@@ -25,9 +25,9 @@
                   <Image url="@assets/person.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="nameLabel" layoutX="217.0" layoutY="16.0" prefHeight="29.0" prefWidth="160.0" text="Name" textFill="#656060" />
-            <Label fx:id="ageLabel" layoutX="217.0" layoutY="62.0" prefHeight="29.0" prefWidth="160.0" text="Age" textFill="#656060" />
-            <Label fx:id="professionLabel" layoutX="217.0" layoutY="108.0" prefHeight="29.0" prefWidth="160.0" text="Profession" textFill="#656060" />
+            <Label fx:id="nameLabel" layoutX="217.0" layoutY="16.0" prefHeight="29.0" prefWidth="295.0" text="Name" textFill="#656060" />
+            <Label fx:id="ageLabel" layoutX="217.0" layoutY="62.0" prefHeight="29.0" prefWidth="295.0" text="Age" textFill="#656060" />
+            <Label fx:id="professionLabel" layoutX="217.0" layoutY="108.0" prefHeight="29.0" prefWidth="295.0" text="Profession" textFill="#656060" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="303.0" layoutY="226.0" prefHeight="160.0" prefWidth="384.0" style="-fx-background-color: #ffffff;">
