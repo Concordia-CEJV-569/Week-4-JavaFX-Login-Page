@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 
 public class DetailsController {
@@ -27,13 +28,13 @@ public class DetailsController {
     private Label professionLabel;
 
     @FXML
-    private Label twitterLabel;
+    private Hyperlink twitterHyperlink;
 
     @FXML
-    private Label emailLabel;
+    private Hyperlink emailHyperlink;
 
     @FXML
-    private Label websiteLabel;
+    private Hyperlink websiteHyperlink;
 
     @FXML
     void initialize() {

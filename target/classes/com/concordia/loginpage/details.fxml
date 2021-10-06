@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.DropShadow?>
@@ -44,21 +45,6 @@
                   <Blend />
                </effect>
             </Label>
-            <Label fx:id="twitterLabel" layoutX="40.0" layoutY="59.0" prefHeight="21.0" prefWidth="140.0" text="Twitter URL" textFill="#656060" underline="true">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="emailLabel" layoutX="40.0" layoutY="90.0" prefHeight="21.0" prefWidth="140.0" text="dummy@email.com" textFill="#656060" underline="true">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="websiteLabel" layoutX="40.0" layoutY="120.0" prefHeight="21.0" prefWidth="140.0" text="www.dummy.com" textFill="#656060" underline="true">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
             <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="11.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/icons8-website-48.png" />
@@ -74,6 +60,9 @@
                   <Image url="@assets/icons8-email-64.png" />
                </image>
             </ImageView>
+            <Hyperlink fx:id="twitterHyperlink" layoutX="40.0" layoutY="57.0" prefHeight="25.0" prefWidth="140.0" text="\@prog_couple" />
+            <Hyperlink fx:id="emailHyperlink" layoutX="40.0" layoutY="88.0" text="pranav.bhatia@concordia.ca" />
+            <Hyperlink fx:id="websiteHyperlink" layoutX="40.0" layoutY="119.0" text="www.google.com" />
          </children>
       </AnchorPane>
    </children>
