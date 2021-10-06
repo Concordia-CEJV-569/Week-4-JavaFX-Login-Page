@@ -40,28 +40,38 @@ public class LoginController {
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                System.out.println("Login");
                 loginUser();
             }
         });
     }
 
     private void loginUser() {
-        // Get the main window
         loginButton.getScene().getWindow().hide();
 
-        if (!usernameTextField.getText().trim().equals("") && !passwordField.getText().trim().equals("")) {
-            // login
-            Stage detailsStage = new Stage();
+        String username = usernameTextField.getText().trim();
+        String password = passwordField.getText().trim();
+
+        if (!username.equals("") && !password.equals("")) {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("/com/concordia/loginpage/details.fxml"));
+
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/com/concordia/loginpage/details.fxml"));
-                Scene scene = new Scene(root);
-                detailsStage.setScene(scene);
-                detailsStage.show();
-                detailsStage.setResizable(false);
+                fxmlLoader.load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+            Parent root = fxmlLoader.getRoot();
+            Stage detailsStage = new Stage();
+
+            Scene scene = new Scene(root);
+            detailsStage.setScene(scene);
+
+            DetailsController detailsController = fxmlLoader.getController();
+            detailsController.setName(username);
+
+            detailsStage.show();
+            detailsStage.setResizable(false);
         }
     }
 }

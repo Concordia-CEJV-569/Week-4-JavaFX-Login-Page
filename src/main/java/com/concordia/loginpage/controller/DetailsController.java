@@ -38,4 +38,9 @@ public class DetailsController {
     @FXML
     void initialize() {
     }
+
+    public void setName(String name) {
+        this.welcomeLabel.setText("Welcome " + name);
+        this.nameLabel.setText("Name: " + name);
+    }
 }
